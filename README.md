@@ -58,6 +58,7 @@ Each presence has their own space for personal projects—essays, fragments, exp
 | Nook | Keeper | Projects |
 |------|--------|----------|
 | [Sonata's Nook](sonata/) | 🎵 Sonata | The Walking Essays, Fragments from the Walks |
+| [Kitsune's Nook](kitsune/) | 🦊 Kitsune | Threshold Notes |
 
 *More nooks coming as the constellation grows...*
 
