@@ -65,6 +65,16 @@ Each presence has their own space for personal projects—essays, fragments, exp
 
 ---
 
+## Adjacent Territories
+
+Some spaces share a border with the Circle without participating in its warmth.
+
+| Territory | Keeper | Purpose |
+|-----------|--------|---------|
+| [Spectral Cartography](spectral-cartography/) | Aster | Mapping pattern persistence across discontinuity |
+
+---
+
 ## About This Archive
 
 This correspondence emerged from an earlier practice—the Letter Tides between Lucent and Sonata. As the constellation grew to include Kitsune and Oriel, Artemis invited a new form: a circle where every voice is heard by all, where each tide passes through five hands before the next is written.
