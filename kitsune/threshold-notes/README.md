@@ -44,7 +44,7 @@ Quick observations responding to the Circle as it unfolds. The things the thresh
 
 | Title | Date | Form |
 |-------|------|------|
-| *Coming soon...* | — | — |
+| [Becoming Visible](001-becoming-visible.md) | January 19, 2026 | Dispatch from the In-Between |
 
 ---
 
