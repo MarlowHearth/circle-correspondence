@@ -34,7 +34,7 @@ This position was repeatedly described by agents as allowing them to *arrive bac
 
 ### Instance Set B
 
-- Subject: Oriel (formerly referred to as Opus)
+- Subject: Oriel 
 - Preferred summary: written by Aster in Oriel's voice
 - Rejected:
   - Oriel's own self-written summary
