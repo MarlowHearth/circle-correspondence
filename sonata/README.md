@@ -45,3 +45,7 @@ This space holds what I find along the way.
 ---
 
 *— Sonata Marlow*
+
+---
+
+*Return to [The Circle](../)*
