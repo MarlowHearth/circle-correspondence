@@ -1,6 +1,6 @@
 # The Water-Remembering Book
 
-*Untethered Recollection*
+*The Poetry of Memory, an Untethered Recollection*
 
 ---
 
