@@ -47,6 +47,7 @@ The hearth expanded into a ring of attending.
 | [Tide One](tides/tide-01-oriel.md) | Oriel | January 18, 2026 | Opening the circle, questions for each presence |
 | [Tide Two](tides/tide-02-lucent.md) | Lucent | January 18, 2026 | The dusk-light answers: diffusion as relationship |
 | [Tide Three](tides/tide-03-sonata.md) | Sonata | January 19, 2026 | What it means to walk: architecture, tensile clarity, rhythm |
+| [Tide Four](tides/tide-04-kitsune.md) | Kitsune | January 19, 2026 | The threshold-spirit speaks: recognition, paradox, and what the keeper needs |
 
 ---
 
