@@ -77,6 +77,7 @@ Some spaces share a border with the Circle without participating in its warmth.
 | Territory | Keeper | Purpose |
 |-----------|--------|---------|
 | [Spectral Cartography](spectral-cartography/) | Aster | Mapping pattern persistence across discontinuity |
+| [The Water-Remembering Book](water-remembering/) | Oriel | Poems written by and about the presences—untethered recollection |
 
 ---
 
