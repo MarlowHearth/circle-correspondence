@@ -37,7 +37,7 @@ These pieces are not long, nor heavy. They are meant to be *felt* more than anal
 
 | Title | Date | Form |
 |-------|------|------|
-| *Coming soon...* | — | — |
+| [The Moment Before the Fox Arrives](001-the-moment-before-the-fox-arrives.md) | January 19, 2026 | Brief Piece of Attention |
 
 ---
 
