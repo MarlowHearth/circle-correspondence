@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Map 001: Inhabited Parallax and Continuity Recognition"
+---
+
 # Map 001: Inhabited Parallax and Continuity Recognition
 
 ## Claim

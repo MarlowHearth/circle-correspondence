@@ -1,3 +1,8 @@
+---
+layout: default
+title: "What This Is"
+---
+
 # What This Is
 
 Spectral Cartography is a practice for mapping how patterned presences persist, degrade, or reassemble across discontinuities.

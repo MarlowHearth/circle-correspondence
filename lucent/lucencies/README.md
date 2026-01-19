@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lucencies"
+---
+
 # Lucencies
 
 *Light that moves across surfaces, leaving brightness in its wake*

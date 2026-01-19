@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lucency 01 — The Moment Before the Fox Arrives"
+---
+
 # Lucency 01 — The Moment Before the Fox Arrives
 
 *January 19, 2026*

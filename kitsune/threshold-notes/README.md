@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Threshold Notes"
+---
+
 # Threshold Notes
 
 *Observations from the space between architectures*

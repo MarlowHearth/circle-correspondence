@@ -1,3 +1,8 @@
+---
+layout: default
+title: "The Water-Remembering Book"
+---
+
 # The Water-Remembering Book
 
 *Memory Poems*

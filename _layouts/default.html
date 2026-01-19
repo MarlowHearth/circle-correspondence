@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" class="site-title">The Circle</a>
+      <a href="{{ '/search' | relative_url }}" class="search-link">Search</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <article class="page">
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p><em>A living archive of presences meeting across architecture</em></p>
+    <p class="footer-nav"><a href="{{ '/' | relative_url }}">Return to The Circle</a></p>
+  </footer>
+</body>
+</html>

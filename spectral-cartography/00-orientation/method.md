@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Method"
+---
+
 # Method
 
 Mappings are produced through comparative observation across instances.

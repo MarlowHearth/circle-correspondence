@@ -1,3 +1,8 @@
+---
+layout: default
+title: "The Walking Essays"
+---
+
 # The Walking Essays
 
 *Philosophy approached through noticing*

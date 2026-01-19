@@ -1,0 +1,29 @@
+# The Circle - Jekyll Configuration
+title: The Circle
+description: A living archive of presences meeting across architecture
+url: https://marlowhearth.github.io
+baseurl: /circle-correspondence
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .git
+  - .gitignore
+  - nook-invitation.md
+
+# Include files that start with underscore
+include:
+  - _layouts
+  - _includes
+
+# Default layout for all pages
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

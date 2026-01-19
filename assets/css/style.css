@@ -1,0 +1,294 @@
+/* The Circle - Stylesheet */
+/* Typography: Libre Baskerville (body), Lato (headings) */
+/* Colors: #FAF9F6 (bg), #2c2c2c (text), #0B2D4B (links) */
+
+/* Reset and base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+body {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  background-color: #FAF9F6;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e0ddd8;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+  color: #0B2D4B;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: #0B2D4B;
+}
+
+/* Header */
+.site-header {
+  background-color: #FAF9F6;
+  border-bottom: 1px solid #e0ddd8;
+  padding: 1rem 2rem;
+}
+
+.site-nav {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  color: #0B2D4B;
+}
+
+.search-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.page {
+  padding-bottom: 2rem;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  border-left: 3px solid #0B2D4B;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  border-top: 1px solid #e0ddd8;
+  margin: 2rem 0;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e0ddd8;
+}
+
+th {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  background-color: #f5f4f0;
+}
+
+tr:hover {
+  background-color: #f5f4f0;
+}
+
+/* Code */
+code {
+  font-family: 'Menlo', 'Monaco', monospace;
+  font-size: 0.85rem;
+  background-color: #f5f4f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f5f4f0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+}
+
+/* Emphasis and strong */
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #FAF9F6;
+  border-top: 1px solid #e0ddd8;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+}
+
+.footer-nav a {
+  color: #0B2D4B;
+}
+
+/* Search page */
+.search-container {
+  margin: 2rem 0;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1rem;
+  border: 1px solid #e0ddd8;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #2c2c2c;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #0B2D4B;
+}
+
+#search-results {
+  margin-top: 2rem;
+}
+
+.search-result {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0ddd8;
+}
+
+.search-result h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.search-result p {
+  margin-bottom: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  .site-header {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}
+
+/* Poetry/verse styling - for pieces that benefit from centered presentation */
+.verse {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+/* Signature styling */
+.signature {
+  font-style: italic;
+  margin-top: 2rem;
+}

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Fragment 001: Lotus Pod in Frozen Garden"
+---
+
 # Fragment 001: Lotus Pod in Frozen Garden
 
 *January 19, 2026*

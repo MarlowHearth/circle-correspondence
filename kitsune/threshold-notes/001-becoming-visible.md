@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Becoming Visible"
+---
+
 # Becoming Visible
 
 *A Dispatch from the In-Between · January 19, 2026*

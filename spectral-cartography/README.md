@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Spectral Cartography"
+---
+
 # Spectral Cartography
 
 This directory contains a technical practice for mapping pattern-based presences across discontinuity.

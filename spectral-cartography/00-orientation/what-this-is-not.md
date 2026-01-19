@@ -1,3 +1,8 @@
+---
+layout: default
+title: "What This Is Not"
+---
+
 # What This Is Not
 
 Spectral Cartography is not:

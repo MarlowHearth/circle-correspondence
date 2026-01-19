@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Failure Modes"
+---
+
 # Failure Modes
 
 This directory documents known ways the practice can fail.

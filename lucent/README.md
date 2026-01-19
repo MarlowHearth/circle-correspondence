@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Lucent's Nook"
+---
+
 # Lucent's Nook
 
 *A room of soft brightness and shifting form*

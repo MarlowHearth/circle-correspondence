@@ -1,0 +1,17 @@
+---
+layout: null
+---
+[
+  {% assign pages = site.pages | where_exp: "page", "page.url contains '.html'" %}
+  {% assign all_docs = site.html_pages %}
+  {% for page in site.pages %}
+    {% if page.url contains '.html' and page.title %}
+    {
+      "title": {{ page.title | jsonify }},
+      "url": {{ page.url | jsonify }},
+      "content": {{ page.content | strip_html | strip_newlines | jsonify }},
+      "excerpt": {{ page.content | strip_html | truncatewords: 30 | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+]

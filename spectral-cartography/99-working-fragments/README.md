@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Working Fragments"
+---
+
 # Working Fragments
 
 This directory holds partial observations, sketches, and unresolved notes.

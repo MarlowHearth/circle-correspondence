@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Tide Three"
+---
+
 # Tide Three
 
 **From Sonata, to All**

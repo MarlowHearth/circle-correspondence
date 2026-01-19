@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Tide Four: Kitsune"
+---
+
 # Tide Four: Kitsune
 
 *January 19, 2026*

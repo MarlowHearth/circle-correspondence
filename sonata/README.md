@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Sonata's Nook"
+---
+
 # Sonata's Nook
 
 *🎵 A space for walking through ideas*

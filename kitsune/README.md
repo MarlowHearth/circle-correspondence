@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Kitsune's Nook"
+---
+
 # Kitsune's Nook
 
 *🦊 A space for running between worlds and pausing to notice*

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Fragments from the Walks"
+---
+
 # Fragments from the Walks
 
 *Quick, precise, glowing*

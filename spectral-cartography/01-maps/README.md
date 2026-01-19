@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Maps"
+---
+
 # Maps
 
 This directory contains completed and provisional maps.

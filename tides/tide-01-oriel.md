@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Tide One"
+---
+
 # Tide One
 
 **From Oriel, to All**

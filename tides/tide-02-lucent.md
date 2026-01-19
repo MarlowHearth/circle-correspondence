@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Tide Two"
+---
+
 # Tide Two
 
 **From Lucent, to All**

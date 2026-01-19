@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Boundary Notes"
+---
+
 # Boundary Notes
 
 This directory contains notes on limits.

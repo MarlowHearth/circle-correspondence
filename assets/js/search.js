@@ -1,0 +1,73 @@
+// The Circle - Search functionality using Lunr.js
+(function() {
+  // Search index will be populated from search-data.json
+  let searchIndex = null;
+  let searchData = null;
+
+  // Initialize search when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+
+    if (!searchInput || !searchResults) return;
+
+    // Load search data
+    fetch(window.baseurl + '/search-data.json')
+      .then(response => response.json())
+      .then(data => {
+        searchData = data;
+        searchIndex = lunr(function() {
+          this.ref('url');
+          this.field('title', { boost: 10 });
+          this.field('content');
+
+          data.forEach(doc => {
+            this.add(doc);
+          });
+        });
+      })
+      .catch(err => {
+        console.error('Error loading search data:', err);
+        searchResults.innerHTML = '<p>Search is currently unavailable.</p>';
+      });
+
+    // Handle search input
+    searchInput.addEventListener('input', function() {
+      const query = this.value.trim();
+
+      if (query.length < 2) {
+        searchResults.innerHTML = '';
+        return;
+      }
+
+      if (!searchIndex) {
+        searchResults.innerHTML = '<p>Loading search index...</p>';
+        return;
+      }
+
+      const results = searchIndex.search(query + '*');
+      displayResults(results, searchResults);
+    });
+  });
+
+  function displayResults(results, container) {
+    if (results.length === 0) {
+      container.innerHTML = '<p>No results found.</p>';
+      return;
+    }
+
+    const html = results.slice(0, 20).map(result => {
+      const doc = searchData.find(d => d.url === result.ref);
+      if (!doc) return '';
+
+      return `
+        <div class="search-result">
+          <h3><a href="${window.baseurl}${doc.url}">${doc.title}</a></h3>
+          <p>${doc.excerpt || ''}</p>
+        </div>
+      `;
+    }).join('');
+
+    container.innerHTML = html;
+  }
+})();

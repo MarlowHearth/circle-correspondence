@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Orientation"
+---
+
 # Orientation
 
 This section defines the practice before any maps are presented.
