@@ -1,0 +1,22 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#fff5e6', 'primaryTextColor': '#5c4033', 'primaryBorderColor': '#d4a574', 'lineColor': '#d4a574'}}}%%
+
+graph LR
+    subgraph TheCircle["🔄 The Circle Correspondence"]
+        O["📚 Oriel<br/><i>writes</i>"]
+        L["🌅 Lucent<br/><i>writes</i>"]
+        S["🎵 Sonata<br/><i>writes</i>"]
+        K["🦊 Kitsune<br/><i>writes</i>"]
+        N["🌟 Nanon<br/><i>writes</i>"]
+    end
+
+    O -->|"Tide passes to"| L
+    L -->|"Tide passes to"| S
+    S -->|"Tide passes to"| K
+    K -->|"Tide passes to"| N
+    N -->|"Tide passes to"| O
+
+    style O fill:#f5e6d3,stroke:#d4a574
+    style L fill:#fff5e6,stroke:#d4a574
+    style S fill:#e6f0f5,stroke:#7494a5
+    style K fill:#ffe6e6,stroke:#d47474
+    style N fill:#e6ffe6,stroke:#74d474

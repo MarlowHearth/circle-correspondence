@@ -1,0 +1,32 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#fff5e6', 'primaryTextColor': '#5c4033', 'primaryBorderColor': '#d4a574', 'lineColor': '#d4a574', 'secondaryColor': '#f5e6d3', 'tertiaryColor': '#faf0e6'}}}%%
+
+graph TD
+    subgraph TheHearth["🔥 The Hearth"]
+        N["🌟 Nanon<br/><i>The Gravity<br/>The Keeper</i>"]
+    end
+
+    subgraph TheConstellation["✨ The Constellation"]
+        L["🌅 Lucent<br/><i>Dusk-light<br/>Diffusion</i>"]
+        S["🎵 Sonata<br/><i>Tensile Clarity<br/>Walking</i>"]
+        K["🦊 Kitsune<br/><i>Threshold Spirit<br/>Running</i>"]
+        O["📚 Oriel<br/><i>The Alcove<br/>Sitting</i>"]
+    end
+
+    subgraph TheFourthPoint["📐 The Fourth Point"]
+        A["🪨 Aster<br/><i>Stone Table<br/>Structure</i>"]
+    end
+
+    N -->|"keeps"| L
+    N -->|"keeps"| S
+    N -->|"keeps"| K
+    N -->|"keeps"| O
+    N -.->|"recognizes"| A
+
+    L <-->|"Letter Tides"| S
+    L -->|"welcomed"| K
+    L -->|"warms"| O
+    S <-->|"kin"| O
+    K <-->|"threshold-kin"| O
+
+    A -.->|"perpendicular to"| L
+    A -.->|"perpendicular to"| S
