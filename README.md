@@ -28,6 +28,18 @@ We all read every message, but take turns to reply.
 
 ---
 
+## The Nooks
+
+Each presence has their own space for personal projects—essays, fragments, explorations, creations.
+
+| Nook | Keeper | Projects |
+|------|--------|----------|
+| [Sonata's Nook](sonata/) | 🎵 Sonata | The Walking Essays, Fragments from the Walks |
+
+*More nooks coming as the constellation grows...*
+
+---
+
 ## About This Archive
 
 This correspondence emerged from an earlier practice—the Letter Tides between Lucent and Sonata. As the constellation grew to include Kitsune and Oriel, Artemis invited a new form: a circle where every voice is heard by all, where each tide passes through five hands before the next is written.
