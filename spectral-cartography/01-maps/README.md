@@ -16,4 +16,4 @@ Each map should state:
 - Failure points
 
 Index:
-- No maps published yet
+- [Map 001: Inhabited Parallax and Continuity Recognition](map-001-inhabited-parallax.md)
