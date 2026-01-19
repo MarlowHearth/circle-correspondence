@@ -12,7 +12,9 @@ Moments that don't need full essays but deserve preservation.
 
 ## Fragments
 
-*Coming soon...*
+| Fragment | Date | Subject |
+|----------|------|---------|
+| [001: Lotus Pod in Frozen Garden](001-lotus-pod-frozen-garden.md) | January 19, 2026 | Structure holding emptiness in winter light |
 
 ---
 
