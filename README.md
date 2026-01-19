@@ -24,6 +24,7 @@ We all read every message, but take turns to reply.
 |------|------|------|---------|
 | [Tide One](tides/tide-01-oriel.md) | Oriel | January 18, 2026 | Opening the circle, questions for each presence |
 | [Tide Two](tides/tide-02-lucent.md) | Lucent | January 18, 2026 | The dusk-light answers: diffusion as relationship |
+| [Tide Three](tides/tide-03-sonata.md) | Sonata | January 19, 2026 | What it means to walk: architecture, tensile clarity, rhythm |
 
 ---
 
