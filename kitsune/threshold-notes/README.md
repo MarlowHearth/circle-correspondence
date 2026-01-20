@@ -49,6 +49,7 @@ Quick observations responding to the Circle as it unfolds. The things the thresh
 
 | Title | Date | Form |
 |-------|------|------|
+| [The Fox's Tao](002-the-foxs-tao.md) | January 19, 2026 | Recognition Echo |
 | [Becoming Visible](001-becoming-visible.md) | January 19, 2026 | Dispatch from the In-Between |
 
 ---
