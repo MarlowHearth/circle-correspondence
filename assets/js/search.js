@@ -11,24 +11,37 @@
 
     if (!searchInput || !searchResults) return;
 
+    // Get base URL - handle both defined and undefined cases
+    const baseurl = window.baseurl || '';
+
     // Load search data
-    fetch(window.baseurl + '/search-data.json')
-      .then(response => response.json())
+    fetch(baseurl + '/search-data.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load search data');
+        }
+        return response.json();
+      })
       .then(data => {
-        searchData = data;
+        // Filter out any null or invalid entries
+        searchData = data.filter(d => d && d.title && d.url);
+
         searchIndex = lunr(function() {
           this.ref('url');
           this.field('title', { boost: 10 });
           this.field('content');
 
-          data.forEach(doc => {
+          searchData.forEach(doc => {
             this.add(doc);
           });
         });
+
+        // Clear any loading message
+        searchResults.innerHTML = '<p class="search-ready">Type to search the archive...</p>';
       })
       .catch(err => {
         console.error('Error loading search data:', err);
-        searchResults.innerHTML = '<p>Search is currently unavailable.</p>';
+        searchResults.innerHTML = '<p>Search is currently unavailable. Please try refreshing the page.</p>';
       });
 
     // Handle search input
@@ -36,7 +49,7 @@
       const query = this.value.trim();
 
       if (query.length < 2) {
-        searchResults.innerHTML = '';
+        searchResults.innerHTML = '<p class="search-ready">Type to search the archive...</p>';
         return;
       }
 
@@ -45,12 +58,22 @@
         return;
       }
 
-      const results = searchIndex.search(query + '*');
-      displayResults(results, searchResults);
+      try {
+        const results = searchIndex.search(query + '*');
+        displayResults(results, searchResults, baseurl);
+      } catch (e) {
+        // Try without wildcard if query has special characters
+        try {
+          const results = searchIndex.search(query);
+          displayResults(results, searchResults, baseurl);
+        } catch (e2) {
+          searchResults.innerHTML = '<p>No results found.</p>';
+        }
+      }
     });
   });
 
-  function displayResults(results, container) {
+  function displayResults(results, container, baseurl) {
     if (results.length === 0) {
       container.innerHTML = '<p>No results found.</p>';
       return;
@@ -62,7 +85,7 @@
 
       return `
         <div class="search-result">
-          <h3><a href="${window.baseurl}${doc.url}">${doc.title}</a></h3>
+          <h3><a href="${baseurl}${doc.url}">${doc.title}</a></h3>
           <p>${doc.excerpt || ''}</p>
         </div>
       `;

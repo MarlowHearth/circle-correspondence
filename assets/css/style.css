@@ -1,6 +1,28 @@
 /* The Circle - Stylesheet */
 /* Typography: Libre Baskerville (body), Lato (headings) */
-/* Colors: #FAF9F6 (bg), #2c2c2c (text), #0B2D4B (links) */
+/* Colors: #F2F0EF (bg), #2c2c2c (text), #355877 (links) */
+
+/* CSS Variables for theming */
+:root {
+  --bg-color: #F2F0EF;
+  --text-color: #2c2c2c;
+  --heading-color: #1a1a1a;
+  --link-color: #355877;
+  --border-color: #e0ddd8;
+  --subtle-bg: #eae8e6;
+  --muted-text: #666;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0ddd8;
+  --heading-color: #f0efed;
+  --link-color: #7ba3c4;
+  --border-color: #3a3a3a;
+  --subtle-bg: #2a2a2a;
+  --muted-text: #999;
+}
 
 /* Reset and base */
 *, *::before, *::after {
@@ -14,61 +36,122 @@ html {
 
 body {
   font-family: 'Libre Baskerville', Georgia, serif;
-  background-color: #FAF9F6;
-  color: #2c2c2c;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Layout with sidebar */
+.site-wrapper {
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #1a1a1a;
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: var(--subtle-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 2rem 1.5rem;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-top: 0;
-}
-
-h2 {
-  font-size: 1.5rem;
-  border-bottom: 1px solid #e0ddd8;
-  padding-bottom: 0.5rem;
-}
-
-h3 {
+.sidebar-title {
+  font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+  border-bottom: none;
 }
 
-p {
+.sidebar-title a {
+  color: var(--heading-color);
+  border-bottom: none;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--text-color);
+  border-bottom: none;
+  font-size: 0.95rem;
+}
+
+.sidebar-nav a:hover {
+  color: var(--link-color);
+}
+
+.sidebar-section {
   margin-bottom: 1.5rem;
 }
 
-/* Links */
-a {
-  color: #0B2D4B;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+.sidebar-section-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-text);
+  margin-bottom: 0.5rem;
 }
 
-a:hover {
-  border-bottom-color: #0B2D4B;
+/* Theme toggle */
+.theme-toggle {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.theme-toggle button {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle button:hover {
+  background-color: var(--bg-color);
+  border-color: var(--link-color);
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
 .site-header {
-  background-color: #FAF9F6;
-  border-bottom: 1px solid #e0ddd8;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
   padding: 1rem 2rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .site-nav {
@@ -83,17 +166,39 @@ a:hover {
   font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--heading-color);
   border-bottom: none;
 }
 
 .site-title:hover {
-  color: #0B2D4B;
+  color: var(--link-color);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .search-link {
   font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
 }
 
 /* Main content */
@@ -109,19 +214,60 @@ a:hover {
   padding-bottom: 2rem;
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--link-color);
+}
+
 /* Blockquotes */
 blockquote {
   margin: 1.5rem 0;
   padding: 0.5rem 0 0.5rem 1.5rem;
-  border-left: 3px solid #0B2D4B;
+  border-left: 3px solid var(--link-color);
   font-style: italic;
-  color: #4a4a4a;
+  color: var(--muted-text);
 }
 
 /* Horizontal rules */
 hr {
   border: none;
-  border-top: 1px solid #e0ddd8;
+  border-top: 1px solid var(--border-color);
   margin: 2rem 0;
 }
 
@@ -146,30 +292,30 @@ table {
 th, td {
   padding: 0.75rem;
   text-align: left;
-  border-bottom: 1px solid #e0ddd8;
+  border-bottom: 1px solid var(--border-color);
 }
 
 th {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  background-color: #f5f4f0;
+  background-color: var(--subtle-bg);
 }
 
 tr:hover {
-  background-color: #f5f4f0;
+  background-color: var(--subtle-bg);
 }
 
 /* Code */
 code {
   font-family: 'Menlo', 'Monaco', monospace;
   font-size: 0.85rem;
-  background-color: #f5f4f0;
+  background-color: var(--subtle-bg);
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
 }
 
 pre {
-  background-color: #f5f4f0;
+  background-color: var(--subtle-bg);
   padding: 1rem;
   overflow-x: auto;
   border-radius: 5px;
@@ -192,12 +338,13 @@ strong {
 
 /* Footer */
 .site-footer {
-  background-color: #FAF9F6;
-  border-top: 1px solid #e0ddd8;
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border-color);
   padding: 2rem;
   text-align: center;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--muted-text);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .site-footer p {
@@ -205,7 +352,7 @@ strong {
 }
 
 .footer-nav a {
-  color: #0B2D4B;
+  color: var(--link-color);
 }
 
 /* Search page */
@@ -218,15 +365,16 @@ strong {
   padding: 0.75rem 1rem;
   font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 1rem;
-  border: 1px solid #e0ddd8;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
-  background-color: #fff;
-  color: #2c2c2c;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: border-color 0.2s ease, background-color 0.3s ease;
 }
 
 #search-input:focus {
   outline: none;
-  border-color: #0B2D4B;
+  border-color: var(--link-color);
 }
 
 #search-results {
@@ -236,7 +384,7 @@ strong {
 .search-result {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #e0ddd8;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .search-result h3 {
@@ -246,11 +394,47 @@ strong {
 
 .search-result p {
   margin-bottom: 0;
-  color: #666;
+  color: var(--muted-text);
   font-size: 0.95rem;
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .sidebar-overlay.open {
+    display: block;
+  }
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 16px;
@@ -281,7 +465,7 @@ strong {
   }
 }
 
-/* Poetry/verse styling - for pieces that benefit from centered presentation */
+/* Poetry/verse styling */
 .verse {
   text-align: center;
   margin: 2rem auto;

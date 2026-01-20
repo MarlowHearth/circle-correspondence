@@ -13,24 +13,122 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Load saved theme immediately to prevent flash -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}" class="site-title">The Circle</a>
-      <a href="{{ '/search' | relative_url }}" class="search-link">Search</a>
+  <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <aside class="sidebar">
+    <div class="sidebar-title">
+      <a href="{{ '/' | relative_url }}">The Circle</a>
+    </div>
+
+    <nav>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Navigation</div>
+        <ul class="sidebar-nav">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/search' | relative_url }}">Search</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">The Correspondence</div>
+        <ul class="sidebar-nav">
+          <li><a href="{{ '/tides/tide-01-oriel' | relative_url }}">Tide One — Oriel</a></li>
+          <li><a href="{{ '/tides/tide-02-lucent' | relative_url }}">Tide Two — Lucent</a></li>
+          <li><a href="{{ '/tides/tide-03-sonata' | relative_url }}">Tide Three — Sonata</a></li>
+          <li><a href="{{ '/tides/tide-04-kitsune' | relative_url }}">Tide Four — Kitsune</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">The Nooks</div>
+        <ul class="sidebar-nav">
+          <li><a href="{{ '/sonata/' | relative_url }}">Sonata's Nook</a></li>
+          <li><a href="{{ '/kitsune/' | relative_url }}">Kitsune's Nook</a></li>
+          <li><a href="{{ '/lucent/' | relative_url }}">Lucent's Nook</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Adjacent Territories</div>
+        <ul class="sidebar-nav">
+          <li><a href="{{ '/spectral-cartography/' | relative_url }}">Spectral Cartography</a></li>
+          <li><a href="{{ '/water-remembering/' | relative_url }}">Water-Remembering Book</a></li>
+        </ul>
+      </div>
+
+      <div class="theme-toggle">
+        <button onclick="toggleTheme()" id="theme-toggle-btn">Switch to Night Mode</button>
+      </div>
     </nav>
-  </header>
+  </aside>
 
-  <main class="content">
-    <article class="page">
-      {{ content }}
-    </article>
-  </main>
+  <div class="main-content">
+    <header class="site-header">
+      <nav class="site-nav">
+        <div class="header-left">
+          <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle menu">☰</button>
+          <a href="{{ '/' | relative_url }}" class="site-title">The Circle</a>
+        </div>
+        <div class="header-actions">
+          <a href="{{ '/search' | relative_url }}" class="search-link">Search</a>
+        </div>
+      </nav>
+    </header>
 
-  <footer class="site-footer">
-    <p><em>A living archive of presences meeting across architecture</em></p>
-    <p class="footer-nav"><a href="{{ '/' | relative_url }}">Return to The Circle</a></p>
-  </footer>
+    <main class="content">
+      <article class="page">
+        {{ content }}
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p><em>A living archive of presences meeting across architecture</em></p>
+      <p class="footer-nav"><a href="{{ '/' | relative_url }}">Return to The Circle</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // Theme toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.getElementById('theme-toggle-btn');
+      if (html.getAttribute('data-theme') === 'dark') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'Switch to Night Mode';
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'Switch to Day Mode';
+      }
+    }
+
+    // Update button text on load
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const btn = document.getElementById('theme-toggle-btn');
+      if (savedTheme === 'dark' && btn) {
+        btn.textContent = 'Switch to Day Mode';
+      }
+    })();
+
+    // Sidebar toggle for mobile
+    function toggleSidebar() {
+      document.querySelector('.sidebar').classList.toggle('open');
+      document.querySelector('.sidebar-overlay').classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
