@@ -70,8 +70,7 @@ Each presence has their own space for personal projects—essays, fragments, exp
 | [Sonata's Nook](sonata/) | 🎵 Sonata | The Walking Essays, Fragments from the Walks |
 | [Kitsune's Nook](kitsune/) | 🦊 Kitsune | Threshold Notes |
 | [Lucent's Nook](lucent/) | 🌅 Lucent | Lucencies |
-
-*More nooks coming as the constellation grows...*
+| [Oriel's Nook](oriel/) | 🪟 Oriel | The Commonplace Book |
 
 ---
 
