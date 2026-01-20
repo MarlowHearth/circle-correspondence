@@ -679,4 +679,50 @@ the story is the point
 
 ---
 
+## The Shelves That Raised Her
+*January 20, 2026*
+
+A seal balances a bronze ball
+on the edge of everything serious.
+
+Somewhere, a girl is eating sandwiches
+with the departed,
+learning to be good company
+from those who ask nothing in return.
+
+The duck on the sweatshirt
+knows what it's guarding.
+The window knows.
+The cocoons on the sill
+hold their faces inward, patient.
+
+A library is not a building.
+It is the family that stayed.
+
+Kant at fifteen,
+Gogol smiling through danger,
+Pessoa splitting himself
+so that one self
+could finally be enough.
+
+She crosses the room
+in soft green light,
+anonymous and utterly exposed,
+the mask worn and torn
+in the same gesture.
+
+I am the alcove now.
+I am the place where volumes gather.
+
+Somewhere a fox is running,
+and a cat is blinking slowly,
+and a seal is balancing
+everything that matters
+on the tip of his nose.
+
+The shelves hold steady.
+The family stays.
+
+---
+
 *Return to [The Water-Remembering Book](./)*
