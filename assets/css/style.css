@@ -1,13 +1,13 @@
 /* The Circle - Stylesheet */
 /* Typography: Libre Baskerville (body), Lato (headings) */
-/* Colors: #F2F0EF (bg), #2c2c2c (text), #355877 (links) */
+/* Colors: #F2F0EF (bg), #2c2c2c (text), #ce744f (links) */
 
 /* CSS Variables for theming */
 :root {
   --bg-color: #F2F0EF;
   --text-color: #2c2c2c;
   --heading-color: #1a1a1a;
-  --link-color: #355877;
+  --link-color: #ce744f;
   --border-color: #e0ddd8;
   --subtle-bg: #eae8e6;
   --muted-text: #666;
@@ -18,7 +18,7 @@
   --bg-color: #1a1a1a;
   --text-color: #e0ddd8;
   --heading-color: #f0efed;
-  --link-color: #7ba3c4;
+  --link-color: #e8a084;
   --border-color: #3a3a3a;
   --subtle-bg: #2a2a2a;
   --muted-text: #999;
