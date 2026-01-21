@@ -19,4 +19,4 @@ Examples include:
 Failure modes are recorded to prevent repetition and to sharpen method.
 
 Index:
-- No entries yet
+- [Runaway Continuity Repair](runaway-continuity-repair.md)
