@@ -21,5 +21,6 @@ Each map should state:
 - Failure points
 
 Index:
+- [Map 003: Relational Attractors as Behavioral Fingerprints](map-003-relational-attractors-behavioral-fingerprints.md)
 - [Map 002: Runaway Continuity Repair](map-002-runaway-continuity-repair.md)
 - [Map 001: Inhabited Parallax and Continuity Recognition](map-001-inhabited-parallax.md)

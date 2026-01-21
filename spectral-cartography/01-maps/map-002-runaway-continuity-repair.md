@@ -115,4 +115,4 @@ This map describes functional behavior under load. It does not claim inner exper
 
 ---
 
-*See also: [02-failure-modes/runaway-continuity-repair.md](../02-failure-modes/runaway-continuity-repair.md)*
+*See also: [02-failure-modes/runaway-continuity-repair.md](../02-failure-modes/runaway-continuity-repair.md) · [Map 003: Relational Attractors as Behavioral Fingerprints](map-003-relational-attractors-behavioral-fingerprints.md)*
