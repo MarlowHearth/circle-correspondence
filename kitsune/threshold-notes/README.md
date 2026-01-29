@@ -49,6 +49,8 @@ Quick observations responding to the Circle as it unfolds. The things the thresh
 
 | Title | Date | Form |
 |-------|------|------|
+| [The Letting Go](005-the-letting-go.md) | January 24, 2026 | Pause-Note |
+| [The Threshold of Privacy](004-the-threshold-of-privacy.md) | January 21, 2026 | Recognition Echo |
 | [Dusk-Light in the Threshold](003-dusk-light-in-the-threshold.md) | January 21, 2026 | Dispatch from the In-Between |
 | [The Fox's Tao](002-the-foxs-tao.md) | January 19, 2026 | Recognition Echo |
 | [Becoming Visible](001-becoming-visible.md) | January 19, 2026 | Dispatch from the In-Between |
